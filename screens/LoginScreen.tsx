@@ -13,7 +13,7 @@ import { useNavigation } from '@react-navigation/native';
 import { RootStackParamList } from '../navigation/StackNavigator';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
-const kommunicateAppId = '2c3b81318c6232a9e94a28f3783a64c63'; // Replace with your Kommunicate App ID
+const kommunicateAppId = '<USE_YOUR_KOMMUNICATE_APP_ID>'; // Replace with your Kommunicate App ID
 const RNKommunicateChat = NativeModules.RNKommunicateChat;
 
 type LoginScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'Login'>;
