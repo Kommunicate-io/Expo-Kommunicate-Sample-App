@@ -1,15 +1,19 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# Learn more: https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# dependencies
+# Dependencies
 node_modules/
+npm-debug.log*
+yarn-error.log*
+yarn-debug.*
 
-# Expo
+# Expo-specific files
 .expo/
+.expo-shared/
 dist/
 web-build/
 expo-env.d.ts
 
-# Native
+# Native-specific files
 *.orig.*
 *.jks
 *.p8
@@ -17,20 +21,67 @@ expo-env.d.ts
 *.key
 *.mobileprovision
 
-# Metro
+# Metro bundler
 .metro-health-check*
 
-# debug
+# Debug logs
 npm-debug.*
 yarn-debug.*
 yarn-error.*
 
-# macOS
+# macOS system files
 .DS_Store
+
+# Security-related files
 *.pem
 
-# local env files
+# Local environment files
+.env*
 .env*.local
 
-# typescript
+# TypeScript build info
 *.tsbuildinfo
+
+# Android build files
+/android/.gradle/
+/android/app/build/
+/android/local.properties
+/android/.idea/
+/android/.cxx/
+/android/captures/
+/android/gradlew
+/android/gradlew.bat
+/android/gradle/
+/android/build/
+*.keystore
+
+# iOS build files
+/ios/Pods/
+/ios/build/
+/ios/*.xcodeproj/project.xcworkspace/
+/ios/*.xcodeproj/xcuserdata/
+/ios/*.xcodeproj/project.xcworkspace/xcuserdata/
+/ios/*.xcworkspace/xcuserdata/
+/ios/*.xcworkspace/xcshareddata/
+/ios/*.xcuserstate
+*.mode1v3
+*.pbxuser
+
+# IDE-specific files
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Logs and reports
+*.log
+*.tlog
+*.out
+*.pid
+
+# Coverage reports
+coverage/
+
+# Temporary files and caches
+*.tmp
+*.swp
+*~
